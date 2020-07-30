@@ -2,6 +2,12 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const envName = process.env.REACT_APP_ENV
+console.log('envName', envName);
+
+const env = process.env
+console.log('env', env);
+
 function App() {
   return (
     <div className="App">
@@ -18,6 +24,9 @@ function App() {
         >
           Learn React
         </a>
+        <p>
+          Env Name: {envName}
+        </p>
       </header>
     </div>
   );
